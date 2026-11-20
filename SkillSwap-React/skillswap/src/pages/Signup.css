@@ -1,0 +1,120 @@
+.form-section {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+.form-section legend {
+  padding: 0 8px;
+  font-size: 20px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.form-section.teach {
+  border: 2px solid var(--purple-border);
+}
+.form-section.teach legend {
+  color: var(--purple-deep);
+}
+.form-section.learn {
+  border: 2px dashed var(--blue-border);
+}
+.form-section.learn legend {
+  color: var(--blue-deep);
+}
+.legend-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.legend-icon.teach {
+  background: var(--purple);
+  color: #fff;
+}
+.legend-icon.learn {
+  background: #fff;
+  color: var(--blue-ink);
+  border: 2px solid var(--blue-ink);
+}
+
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+.skill-row.teach {
+  background: var(--purple-tint-2);
+}
+.skill-row.teach strong {
+  color: var(--purple-deep);
+}
+.skill-row.learn {
+  background: var(--blue-tint-2);
+}
+.skill-row.learn strong {
+  color: var(--blue-deep);
+}
+.skill-add {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.skill-add .field {
+  flex: 1 1 260px;
+  font-size: 13px;
+}
+
+.preview-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+.preview-banner {
+  height: 84px;
+  background: linear-gradient(120deg, #efebff, #e5f0ff);
+}
+.preview-body {
+  padding: 0 24px 24px;
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.upload-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+.file-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.file-input:focus-visible + .btn {
+  outline: 3px solid #a99bff;
+  outline-offset: 2px;
+}
+@media (max-width: 640px) {
+  .form-section {
+    padding: 20px;
+  }
+}

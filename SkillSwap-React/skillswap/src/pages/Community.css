@@ -1,0 +1,84 @@
+.composer {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 22px;
+}
+.post h2 {
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
+.post-body {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+.post-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  border-top: 1px solid var(--line-2);
+  padding-top: 10px;
+}
+.post-actions .btn {
+  min-height: 40px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+.like-btn[aria-pressed='true'] {
+  background: var(--pink-tint);
+  color: var(--pink);
+}
+.replies {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--bg);
+  border-radius: 16px;
+  padding: 14px;
+}
+.reply {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.challenge {
+  background: var(--gradient-diag);
+  color: #fff;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.challenge p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #eeebff;
+}
+.teacher-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-decoration: none;
+  color: var(--ink);
+}
+.teacher-row:hover {
+  color: var(--purple-ink);
+}
+.guidelines {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}

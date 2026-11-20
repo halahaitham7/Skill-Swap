@@ -1,0 +1,129 @@
+.profile-header {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+}
+.profile-banner {
+  height: 140px;
+  border-radius: 28px 28px 0 0;
+  background:
+    radial-gradient(600px 200px at 20% 0%, #dcd3ff 0%, rgba(220, 211, 255, 0) 70%),
+    radial-gradient(600px 220px at 90% 100%, #cfe3ff 0%, rgba(207, 227, 255, 0) 70%),
+    #f3f1fd;
+}
+.profile-head-body {
+  padding: 0 32px 28px;
+  margin-top: -56px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-end;
+}
+.profile-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-size: 15px;
+  color: var(--muted);
+}
+.profile-meta > span {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+.compare-box {
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.fit-pill {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.fit-pill.yes {
+  background: var(--green-tint);
+  color: var(--green);
+}
+.fit-pill.no {
+  background: #f2f0fb;
+  color: var(--muted);
+}
+.fact {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.avail-table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: separate;
+  border-spacing: 6px;
+  font-size: 13px;
+}
+.avail-table th {
+  font-weight: 700;
+  color: var(--muted);
+}
+.avail-table th[scope='row'] {
+  text-align: left;
+  color: var(--ink-2);
+  width: 96px;
+}
+.avail-table td {
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  background: #f5f4fa;
+}
+.avail-table td.both {
+  background: var(--purple);
+  color: #fff;
+}
+.avail-table td.them {
+  background: #d6e6fb;
+  color: var(--blue-deep);
+}
+.avail-table td.you {
+  background: #fff;
+  color: var(--purple-ink);
+  border: 1.5px dashed #9c8cf5;
+}
+.review {
+  display: flex;
+  gap: 14px;
+  border-top: 1px solid var(--line-2);
+  padding-top: 18px;
+}
+.trust-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--ink-2);
+}
+.trust-list li {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 640px) {
+  .profile-head-body {
+    padding: 0 20px 24px;
+  }
+}

@@ -1,0 +1,116 @@
+.day-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 8px;
+}
+.day-btn {
+  min-height: 64px;
+  border-radius: 14px;
+  border: 1.5px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 6px 0;
+  transition: border-color 0.15s ease;
+}
+.day-btn:hover {
+  border-color: var(--purple-border);
+}
+.day-btn[aria-pressed='true'] {
+  background: var(--purple);
+  border-color: var(--purple);
+  color: #fff;
+}
+.day-btn .dow {
+  font-size: 11px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+.day-btn .num {
+  font-size: 18px;
+  font-weight: 800;
+}
+.day-btn .free-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: transparent;
+}
+.day-btn .free-dot.on {
+  background: #12a16b;
+}
+.day-btn[aria-pressed='true'] .free-dot.on {
+  background: #fff;
+}
+
+.mode-card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 2px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+}
+.mode-card[aria-pressed='true'] {
+  background: var(--purple-tint-2);
+  border-color: var(--purple);
+}
+
+.summary-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--purple-tint-2);
+  border-radius: 18px;
+  padding: 16px 18px;
+}
+
+.history {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.history li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  border: 1px solid var(--line-2);
+  border-radius: 16px;
+  padding: 12px;
+}
+.history .status-icon {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.history .small-btn {
+  min-height: 36px;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  .day-grid {
+    gap: 4px;
+  }
+  .day-btn .num {
+    font-size: 16px;
+  }
+}
